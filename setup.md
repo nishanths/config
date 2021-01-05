@@ -53,3 +53,9 @@ In terminal run the function:
 ```
 base16-gruvbox-dark-hard
 ```
+
+# fish shell user paths
+
+```
+set -Ua fish_user_paths /path/to/add
+```
