@@ -1,0 +1,33 @@
+[color]
+	ui = true
+[user]
+	name = Nishanth Shanmugham
+	email = nishanth.gerrard@gmail.com
+[init]
+	defaultBranch = main
+[alias]
+	co = checkout
+	s = status
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	b = branch
+	c = commit
+	ce = commit --amend
+	cp = cherry-pick
+	d = diff
+	r = rebase
+	p = push
+	a = add
+	f = fetch
+	l = log
+[push]
+	default = simple
+[rebase]
+	autoStash = true
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[core]
+	editor = vimx
+[pull]
+	ff = only
