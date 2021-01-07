@@ -40,8 +40,12 @@ The best known method of installation is mentioned.
 
 # gnome-terminal colors and profile
 
-- Color > check the box for "Use colors from system theme"
-- Color > Palette (at bottom) > choose "Solarized"
+- Colors > uncheck "Use colors from system theme"
+- Colors > Built-in schemes > Custom.
+  Default color: Text: BDAE91, Background: 1E1E1E.
+  Bold color, Cursor color, ... are unchecked.
+- Colors > Palette (at bottom) > choose "Solarized".
+  Check "Show bold text in bright colors".
 - Command > Run custom command instead of my shell:
   /home/nishanthshanmugham/bin/tmux_new
 
