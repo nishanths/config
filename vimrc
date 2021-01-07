@@ -186,5 +186,5 @@ map <C-n> :NERDTreeToggle<CR>
 syntax on
 set termguicolors     " enable true colors support
 set background=dark
-let ayucolor="dark"   " for dark version of theme
+let g:ayucolor="dark" " for dark version of theme
 colorscheme ayu_custom
