@@ -24,5 +24,3 @@ mkdir:
 	mkdir -p config/git
 	mkdir -p bin
 	mkdir -p config/fish/functions
-
-
