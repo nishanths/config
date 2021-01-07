@@ -15,8 +15,6 @@ sync: mkdir
 		config/fish/config.fish
 	cp ${HOME}/.config/fish/functions/fish_prompt.fish \
 		config/fish/functions/fish_prompt.fish
-	cp ${HOME}/.config/fish/functions/base16-gruvbox-dark-hard.fish \
-		config/fish/functions/base16-gruvbox-dark-hard.fish
 
 .PHONY: mkdir
 mkdir:

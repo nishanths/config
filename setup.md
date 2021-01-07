@@ -40,21 +40,24 @@ The best known method of installation is mentioned.
 
 # gnome-terminal colors and profile
 
-https://github.com/aaron-williamson/base16-gnome-terminal
+- Color > check the box for "Use colors from system theme"
+- Color > Palette (at bottom) > choose "Solarized"
+- Command > Run custom command instead of my shell:
+  /home/nishanthshanmugham/bin/tmux_new
 
-Use color-scripts/base16-gruvbox-dark-hard.sh
+# fish colors
 
-Run custom command instead of my shell: /home/nishanthshanmugham/bin/tmux_new
-
-# fish shell colors
-
-In terminal run the function:
+In terminal run:
 
 ```
-base16-gruvbox-dark-hard
+fish_config
 ```
 
-# fish shell user paths
+Then set the theme "Solarized Dark".
+
+# fish user paths
+
+To add a path, in terminal run:
 
 ```
 set -Ua fish_user_paths /path/to/add
