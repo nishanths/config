@@ -15,6 +15,8 @@ sync: mkdir
 		config/fish/config.fish
 	cp ${HOME}/.config/fish/functions/fish_prompt.fish \
 		config/fish/functions/fish_prompt.fish
+	cp ${HOME}/.config/fish/functions/fish_user_key_bindings.fish \
+		config/fish/functions/fish_user_key_bindings.fish
 
 .PHONY: mkdir
 mkdir:
