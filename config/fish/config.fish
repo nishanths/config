@@ -9,3 +9,5 @@ set -x VISUAL vimx
 
 # https://stackoverflow.com/a/64011263/3309046
 set -x CLOUDSDK_PYTHON python2
+
+set -x READINGLIST_HOME $HOME/src/readinglist
