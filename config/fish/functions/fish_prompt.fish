@@ -3,10 +3,10 @@ function fish_prompt --description 'Write out the prompt'
 	echo -n "["(date "+%H:%M")"]"
 	if [ $PWD != $HOME ]
         printf " "
-        set_color yellow
+        set_color brred
 		echo -n (basename $PWD)
 	end
-	set_color green
+	set_color brred
 	printf '%s ' (__fish_git_prompt)
 	set_color bdae91
 	echo -n '% '
