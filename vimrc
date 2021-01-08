@@ -13,7 +13,7 @@ Plug 'vimwiki/vimwiki'
 " If you don't have nodejs and yarn use pre build, add 'vim-plug' to the
 " filetype list so vim-plug can update this plugin see:
 " https://github.com/iamcco/markdown-preview.nvim/issues/50
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug'] }
 
 " LSP and autocompletion
 Plug 'prabirshrestha/async.vim'
@@ -59,14 +59,12 @@ set backspace=2
 set tabstop=4
 set shiftwidth=4
 set expandtab
-set number relativenumber
-augroup numbertoggle
-  autocmd!
-  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
-  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
-augroup END
+set number " https://jeffkreeftmeijer.com/vim-number/
 set laststatus=2
 set noshowmode
+" http://vimcasts.org/episodes/soft-wrapping-text/
+set wrap
+set linebreak
 runtime! macros/matchit.vim
 
 " File-specific settings
