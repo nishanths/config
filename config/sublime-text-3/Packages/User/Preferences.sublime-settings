@@ -1,0 +1,18 @@
+{
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
+	"ensure_newline_at_eof_on_save": true,
+	"font_face": "Meslo LG S",
+	"font_size": 10,
+	"ignored_packages":
+	[
+		"Rust",
+		"Vintage"
+	],
+	"rulers":
+	[
+		80
+	],
+	"theme": "Default.sublime-theme",
+	"trim_trailing_white_space_on_save": true,
+	"vintage_ctrl_keys": true
+}

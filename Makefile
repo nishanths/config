@@ -17,6 +17,13 @@ sync: mkdir
 		config/fish/functions/fish_prompt.fish
 	cp ${HOME}/.config/fish/functions/fish_user_key_bindings.fish \
 		config/fish/functions/fish_user_key_bindings.fish
+	# sublime
+	cp "${HOME}/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap" \
+		"config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap"
+	cp "${HOME}/.config/sublime-text-3/Packages/User/Preferences.sublime-settings" \
+		"config/sublime-text-3/Packages/User/Preferences.sublime-settings"
+
+
 
 .PHONY: mkdir
 mkdir:
@@ -24,3 +31,4 @@ mkdir:
 	mkdir -p config/git
 	mkdir -p bin
 	mkdir -p config/fish/functions
+	mkdir -p config/sublime-text-3/Packages/User
