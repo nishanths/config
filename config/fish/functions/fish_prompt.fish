@@ -6,7 +6,7 @@ function fish_prompt --description 'Write out the prompt'
         set_color yellow
 		echo -n (basename $PWD)
 	end
-	set_color yellow
+	set_color green
 	printf '%s ' (__fish_git_prompt)
 	set_color bdae91
 	echo -n '% '
