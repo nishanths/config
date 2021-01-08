@@ -12,7 +12,8 @@ generate a SSH key.
 The best known method of installation is mentioned.
 
 - ag: dnf, see GitHub, package named the\_silver\_searcher
-- fzy: install from [source][fzy], required for vim plugin srstevenson/vim-picker
+- fzy: install from [source][fzy], required for vim plugin
+  srstevenson/vim-picker
 - gvim: dnf; provides vimx with clipboard and other features
 - jq: dnf, see GitHub
 - sublime text: dnf, see [website][subl] for instructions
