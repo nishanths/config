@@ -1,5 +1,9 @@
 .PHONY: sync
 sync: mkdir
+	# bash
+	cp ${HOME}/.bash_profile               bash_profile
+	cp ${HOME}/.profile                    profile
+	cp ${HOME}/.bashrc                     bashrc
 	# git
 	cp ${HOME}/.config/git/config          config/git/config
 	# vim
@@ -10,25 +14,16 @@ sync: mkdir
 	cp ${HOME}/.tmux.conf                  tmux.conf
 	# bin
 	cp ${HOME}/bin/tmux_new                bin/tmux_new
-	# fish
-	cp ${HOME}/.config/fish/config.fish \
-		config/fish/config.fish
-	cp ${HOME}/.config/fish/functions/fish_prompt.fish \
-		config/fish/functions/fish_prompt.fish
-	cp ${HOME}/.config/fish/functions/fish_user_key_bindings.fish \
-		config/fish/functions/fish_user_key_bindings.fish
+	cp ${HOME}/bin/git-prompt.sh           bin/git-prompt.sh
 	# sublime
 	cp "${HOME}/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap" \
 		"config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap"
 	cp "${HOME}/.config/sublime-text-3/Packages/User/Preferences.sublime-settings" \
 		"config/sublime-text-3/Packages/User/Preferences.sublime-settings"
 
-
-
 .PHONY: mkdir
 mkdir:
 	mkdir -p vim/colors
 	mkdir -p config/git
 	mkdir -p bin
-	mkdir -p config/fish/functions
 	mkdir -p config/sublime-text-3/Packages/User

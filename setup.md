@@ -41,29 +41,17 @@ The best known method of installation is mentioned.
 
 # gnome-terminal colors and profile
 
+## Colors
+
 - Colors > uncheck "Use colors from system theme"
 - Colors > Built-in schemes > Custom.
-  Default color: Text: BDAE91, Background: 1E1E1E.
+  Default color: Text: e6e1cf (ayu fg), Background: 111.
   Bold color, Cursor color, ... are unchecked.
 - Colors > Palette (at bottom) > choose "Solarized".
   Check "Show bold text in bright colors".
-- Command > Run custom command instead of my shell:
-  /home/nishanthshanmugham/bin/tmux_new
 
-# fish colors
+## Shortcuts
 
-In terminal run:
-
-```
-fish_config
-```
-
-Then set the theme "Solarized Dark".
-
-# fish user paths
-
-To add a path, in terminal run:
-
-```
-set -Ua fish_user_paths /path/to/add
-```
+New Tab: Ctrl+T
+New Window: Ctrl+N
+Close Tab: Ctrl+W

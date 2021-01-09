@@ -186,3 +186,8 @@ set termguicolors     " enable true colors support
 set background=dark
 let g:ayucolor="dark" " for dark version of theme
 colorscheme ayu_custom
+
+if has('gui_running') && has('autocmd')
+  au VimEnter * let s:fontsetting = &guifont    " save the font at the end of startup
+  au VimResized * let &guifont = s:fontsetting  " set the font again if the GUI changes size
+endif
