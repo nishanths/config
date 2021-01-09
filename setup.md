@@ -46,8 +46,8 @@ The best known method of installation is mentioned.
 - Colors > uncheck "Use colors from system theme"
 - Colors > Built-in schemes > Custom.
   ```
-  Default color: Text: e6e1cf (ayu fg), Background: 111.
-  Cursor color:  Text: ffffff,          Background: 57AAC2.
+  Default color: Text: e6e1cf (ayu fg), Background: 1e1e1e.
+  Cursor color:  Text: ffffff,          Background: 32859E/57AAC2.
   Bold color, Highlight color, ... are unchecked.
   ```
 - Colors > Palette (at bottom) > choose "Solarized".
