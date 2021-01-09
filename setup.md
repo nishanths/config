@@ -55,3 +55,9 @@ The best known method of installation is mentioned.
 - New Tab: Ctrl+T
 - New Window: Ctrl+N
 - Close Tab: Ctrl+W
+
+# Firefox
+
+Install Firefox GNOME theme:
+
+https://github.com/rafaelmardojai/firefox-gnome-theme
