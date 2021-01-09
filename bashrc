@@ -19,7 +19,7 @@ fi
 # bind Ctrl-K to clear (like macOS's Command-K)
 bind -x '"\C-k":"clear"'
 
-alias vim=vimx
+alias vim=gvim
 alias docker=podman
 alias pbcopy="xclip -selection c"
 alias pbpaste="xclip -selection clipboard -o"
