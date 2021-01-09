@@ -10,10 +10,7 @@ sync: mkdir
 	cp ${HOME}/.vimrc                      vimrc
 	cp ${HOME}/.gvimrc                     gvimrc
 	cp ${HOME}/.vim/colors/ayu_custom.vim  vim/colors/ayu_custom.vim
-	# tmux
-	cp ${HOME}/.tmux.conf                  tmux.conf
 	# bin
-	cp ${HOME}/bin/tmux_new                bin/tmux_new
 	cp ${HOME}/bin/git-prompt.sh           bin/git-prompt.sh
 	# sublime
 	cp "${HOME}/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap" \
