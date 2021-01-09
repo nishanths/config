@@ -174,9 +174,6 @@ let g:indentLine_char = '▏'
 let g:indentLine_setColors = 0 " ayu colorscheme provides highlighting
 let g:indentLine_setConceal = 0
 
-" nerd tree
-map <C-n> :NERDTreeToggle<CR>
-
 " Markdown preview
 " let g:mkdp_markdown_css = expand('$HOME/src/sk-assignment/simonlc.css')
 

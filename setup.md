@@ -45,16 +45,17 @@ The best known method of installation is mentioned.
 
 - Colors > uncheck "Use colors from system theme"
 - Colors > Built-in schemes > Custom.
+  ```
   Default color: Text: e6e1cf (ayu fg), Background: 111.
-  Bold color, Cursor color, ... are unchecked.
+  Cursor color:  Text: ffffff,          Background: 57AAC2.
+  Bold color, Highlight color, ... are unchecked.
+  ```
 - Colors > Palette (at bottom) > choose "Solarized".
   Check "Show bold text in bright colors".
 
 ## Shortcuts
 
 - New Tab: Ctrl+T
-- New Window: Ctrl+N
-- Close Tab: Ctrl+W
 
 # Firefox
 

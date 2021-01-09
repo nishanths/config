@@ -18,8 +18,6 @@ fi
 
 # bind Ctrl-K to clear (like macOS's Command-K)
 bind -x '"\C-k":"clear"'
-# use Ctrl-E to erase word (Ctrl-W, the default, is used to close window)
-stty werase '^E'
 
 alias vim=vimx
 alias docker=podman
