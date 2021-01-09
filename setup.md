@@ -52,6 +52,6 @@ The best known method of installation is mentioned.
 
 ## Shortcuts
 
-New Tab: Ctrl+T
-New Window: Ctrl+N
-Close Tab: Ctrl+W
+- New Tab: Ctrl+T
+- New Window: Ctrl+N
+- Close Tab: Ctrl+W
