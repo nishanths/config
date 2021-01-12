@@ -141,12 +141,12 @@ hi LongLineWarning  guifg=NONE        guibg=#371F1C     gui=underline ctermfg=NO
 
 "}}}
 
-exe "hi! LspWarningHighlight"  .s:fg_fg .s:bg_none .s:fmt_none
+exe "hi! LspWarningHighlight"  .s:fg_none .s:bg_none .s:fmt_none
 exe "hi! LspWarningText"       .s:fg_none .s:bg_none .s:fmt_none
-exe "hi! LspWarningVirtual"    .s:fg_fg .s:bg_none .s:fmt_none
-exe "hi! LspErrorHighlight"    .s:fg_fg .s:bg_none .s:fmt_none
+exe "hi! LspWarningVirtual"    .s:fg_none .s:bg_none .s:fmt_none
+exe "hi! LspErrorHighlight"    .s:fg_none .s:bg_none .s:fmt_none
 exe "hi! LspErrorText"         .s:fg_none .s:bg_none .s:fmt_none
-exe "hi! LspErrorVirtual"      .s:fg_fg .s:bg_none .s:fmt_none
+exe "hi! LspErrorVirtual"      .s:fg_none .s:bg_none .s:fmt_none
 
 " Generic Syntax Highlighting: (see :help group-name)"{{{
 " ----------------------------------------------------------------------------

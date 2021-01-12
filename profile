@@ -1,4 +1,5 @@
 # User specific environment and startup programs
+
 export PATH=$HOME/.local/bin:$PATH
 export PATH=$HOME/bin:$PATH
 export PATH=/usr/local/go/bin:$PATH
@@ -12,3 +13,7 @@ export VISUAL=gvim
 export CLOUDSDK_PYTHON=python2
 
 export READINGLIST_HOME=$HOME/src/readinglist
+
+if [ -f ~/.secrets ]; then
+    . ~/.secrets
+fi

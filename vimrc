@@ -9,7 +9,6 @@ Plug 'Raimondi/delimitMate'
 Plug 'Yggdroot/indentLine'
 Plug 'preservim/nerdtree'
 Plug 'itchyny/lightline.vim'
-Plug 'vimwiki/vimwiki'
 " If you don't have nodejs and yarn use pre build, add 'vim-plug' to the
 " filetype list so vim-plug can update this plugin see:
 " https://github.com/iamcco/markdown-preview.nvim/issues/50
@@ -183,8 +182,3 @@ set termguicolors     " enable true colors support
 set background=dark
 let g:ayucolor="dark" " for dark version of theme
 colorscheme ayu_custom
-
-if has('gui_running') && has('autocmd')
-  au VimEnter * let s:fontsetting = &guifont    " save the font at the end of startup
-  au VimResized * let &guifont = s:fontsetting  " set the font again if the GUI changes size
-endif

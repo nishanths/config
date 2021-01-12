@@ -19,6 +19,8 @@
 	a = add
 	f = fetch
 	l = log
+[rerere]
+	enabled = 1
 [push]
 	default = simple
 [rebase]
@@ -27,7 +29,5 @@
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
-[core]
-	editor = vimx
 [pull]
 	ff = only
