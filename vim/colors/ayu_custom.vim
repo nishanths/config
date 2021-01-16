@@ -41,6 +41,7 @@ let s:palette.selection = {'dark': "#253340",  'light': "#F0EEE4",  'mirage': "#
 let s:palette.fg        = {'dark': "#E6E1CF",  'light': "#5C6773",  'mirage': "#D9D7CE"}
 let s:palette.fg_idle   = {'dark': "#3E4B59",  'light': "#828C99",  'mirage': "#607080"}
 
+let s:palette.cursor    = {'dark': "#32859E",  'light': "#32859E",  'mirage': "#32859E"}
 "}}}
 
 " Highlighting Primitives:"{{{
@@ -94,6 +95,9 @@ exe "hi! ColorColumn"   .s:fg_none        .s:bg_colorcol    .s:fmt_none
 exe "hi! CursorColumn"  .s:fg_none        .s:bg_line        .s:fmt_none
 exe "hi! CursorLine"    .s:fg_none        .s:bg_line        .s:fmt_none
 exe "hi! CursorLineNr"  .s:fg_accent      .s:bg_line        .s:fmt_none
+" if has("gui_running")
+" exe "hi! Cursor"    .s:fg_none        .s:bg_cursor      .s:fmt_none
+" endif
 exe "hi! LineNr"        .s:fg_guide       .s:bg_none        .s:fmt_none
 
 exe "hi! Directory"     .s:fg_fg_idle     .s:bg_none        .s:fmt_none

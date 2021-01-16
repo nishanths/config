@@ -9,10 +9,7 @@ Plug 'Raimondi/delimitMate'
 Plug 'Yggdroot/indentLine'
 Plug 'preservim/nerdtree'
 Plug 'itchyny/lightline.vim'
-" If you don't have nodejs and yarn use pre build, add 'vim-plug' to the
-" filetype list so vim-plug can update this plugin see:
-" https://github.com/iamcco/markdown-preview.nvim/issues/50
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug'] }
+Plug 'godlygeek/tabular'
 
 " LSP and autocompletion
 Plug 'prabirshrestha/async.vim'
@@ -20,9 +17,6 @@ Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-lsp-settings'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
-
-" LSP-dependent utilities
-Plug 'liuchengxu/vista.vim'
 
 " Languages
 Plug 'rust-lang/rust.vim'
@@ -89,6 +83,9 @@ autocmd BufWritePre * :call TrimTrailingWhitespace()
 
 " comments space
 let NERDSpaceDelims=1
+
+" NERDTree
+let NERDTreeHijackNetrw=1
 
 " File picker
 nnoremap <C-p> :PickerEdit<CR>
@@ -159,22 +156,17 @@ let g:rust_recommended_style = 0
 let g:go_fmt_command = "goimports"
 
 " Netrw
-" let g:netrw_liststyle = 3
-" let g:netrw_banner = 0
-
-" Vista
-let g:vista_executive_for = {
-    \ 'rust': 'vim_lsp',
-\ }
-let g:vista_ignore_kinds = ['Variable']
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
 
 " IndentLine
 let g:indentLine_char = '▏'
 let g:indentLine_setColors = 0 " ayu colorscheme provides highlighting
 let g:indentLine_setConceal = 0
 
-" Markdown preview
-" let g:mkdp_markdown_css = expand('$HOME/src/sk-assignment/simonlc.css')
+let g:lightline = {
+  \ 'colorscheme': 'ayu_dark',
+\ }
 
 " Color and syntax
 syntax on

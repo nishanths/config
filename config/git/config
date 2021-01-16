@@ -5,6 +5,8 @@
 	email = nishanth.gerrard@gmail.com
 [init]
 	defaultBranch = main
+[core]
+	editor = subl -n -w
 [alias]
 	co = checkout
 	s = status

@@ -13,7 +13,7 @@ export PS1='[\W] % '
 
 if [ -f $HOME/bin/git-prompt.sh ]; then
     source $HOME/bin/git-prompt.sh
-    export PS1='[\W$(__git_ps1 "|%s")] % '
+    export PS1='[\W$(__git_ps1 "|%s")$(printf "%.*s%.*s" $? "|" $? $?)] % '
 fi
 
 # bind Ctrl-K to clear (like macOS's Command-K)
