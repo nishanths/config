@@ -1,0 +1,9 @@
+{
+    "rust_phantom_style": "none",
+    "rust_gutter_style": "none",
+    "rust_region_style": "none",
+    "rust_syntax_hide_warnings": false,
+    "show_panel_on_build": false,
+    "rust_message_status_bar": false,
+    "rust_syntax_checking_method": "check",
+}

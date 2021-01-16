@@ -20,6 +20,10 @@ sync: mkdir
 	# sublime packages
 	cp "${HOME}/.config/sublime-text-3/Packages/User/GoSublime/src/margo/margo.go" \
 		"config/sublime-text-3/Packages/User/GoSublime/src/margo/margo.go"
+	cp "${HOME}/.config/sublime-text-3/Packages/User/RustFmt.sublime-settings" \
+		"config/sublime-text-3/Packages/User/RustFmt.sublime-settings"
+	cp "${HOME}/.config/sublime-text-3/Packages/User/RustEnhanced.sublime-settings" \
+		"config/sublime-text-3/Packages/User/RustEnhanced.sublime-settings"
 
 .PHONY: mkdir
 mkdir:
