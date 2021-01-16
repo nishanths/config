@@ -1,3 +1,5 @@
+SUBL_PACKAGES_USER := sublime-text-3/Packages/User
+
 .PHONY: sync
 sync: mkdir
 	# bash
@@ -13,22 +15,22 @@ sync: mkdir
 	# bin
 	cp ${HOME}/bin/git-prompt.sh           bin/git-prompt.sh
 	# sublime
-	cp "${HOME}/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap" \
-		"config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap"
-	cp "${HOME}/.config/sublime-text-3/Packages/User/Preferences.sublime-settings" \
-		"config/sublime-text-3/Packages/User/Preferences.sublime-settings"
+	cp "${HOME}/.config/$(SUBL_PACKAGES_USER)/Default (Linux).sublime-keymap" \
+		"config/$(SUBL_PACKAGES_USER)/Default (Linux).sublime-keymap"
+	cp "${HOME}/.config/$(SUBL_PACKAGES_USER)/Preferences.sublime-settings" \
+		"config/$(SUBL_PACKAGES_USER)/Preferences.sublime-settings"
 	# sublime packages
-	cp "${HOME}/.config/sublime-text-3/Packages/User/GoSublime/src/margo/margo.go" \
-		"config/sublime-text-3/Packages/User/GoSublime/src/margo/margo.go"
-	cp "${HOME}/.config/sublime-text-3/Packages/User/RustFmt.sublime-settings" \
-		"config/sublime-text-3/Packages/User/RustFmt.sublime-settings"
-	cp "${HOME}/.config/sublime-text-3/Packages/User/RustEnhanced.sublime-settings" \
-		"config/sublime-text-3/Packages/User/RustEnhanced.sublime-settings"
+	cp "${HOME}/.config/$(SUBL_PACKAGES_USER)/GoSublime/src/margo/margo.go" \
+		"config/$(SUBL_PACKAGES_USER)/GoSublime/src/margo/margo.go"
+	cp "${HOME}/.config/$(SUBL_PACKAGES_USER)/RustFmt.sublime-settings" \
+		"config/$(SUBL_PACKAGES_USER)/RustFmt.sublime-settings"
+	cp "${HOME}/.config/$(SUBL_PACKAGES_USER)/RustEnhanced.sublime-settings" \
+		"config/$(SUBL_PACKAGES_USER)/RustEnhanced.sublime-settings"
 
 .PHONY: mkdir
 mkdir:
 	mkdir -p vim/colors
 	mkdir -p config/git
 	mkdir -p bin
-	mkdir -p config/sublime-text-3/Packages/User
-	mkdir -p config/sublime-text-3/Packages/User/GoSublime/src/margo
+	mkdir -p config/$(SUBL_PACKAGES_USER)
+	mkdir -p config/$(SUBL_PACKAGES_USER)/GoSublime/src/margo
