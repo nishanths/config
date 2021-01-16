@@ -12,7 +12,7 @@
     // { "keys": ["alt+backspace"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard BOL.sublime-macro"} },
     // { "keys": ["alt+delete"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard EOL.sublime-macro"} },
 
-    // { "keys": ["ctrl+.", "ctrl+a"], "command": "lsp_code_actions", "context": [{"key": "setting.lsp_active"}]},
-    // { "keys": ["ctrl+.", "ctrl+g"], "command": "lsp_symbol_definition", "context": [{"key": "setting.lsp_active"}] },
-    // { "keys": ["ctrl+.", "ctrl+t"], "command": "lsp_symbol_type_definition", "context": [{"key": "setting.lsp_active"}] },
+    { "keys": ["ctrl+.", "ctrl+a"], "command": "lsp_code_actions", "context": [{"key": "setting.lsp_active"}]},
+    { "keys": ["ctrl+.", "ctrl+g"], "command": "lsp_symbol_definition", "context": [{"key": "setting.lsp_active"}] },
+    { "keys": ["ctrl+.", "ctrl+t"], "command": "lsp_symbol_type_definition", "context": [{"key": "setting.lsp_active"}] },
 ]

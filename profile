@@ -7,6 +7,8 @@ export PATH=$HOME/go/bin:$PATH
 export PATH=/usr/local/lib/nodejs/node-v14.8.0-linux-x64/bin:$PATH
 export PATH="$HOME/.cargo/bin:$PATH"
 
+export GOPATH=$HOME/go
+
 export VISUAL='subl -n -w'
 # https://stackoverflow.com/a/64011263/3309046
 export CLOUDSDK_PYTHON=python2

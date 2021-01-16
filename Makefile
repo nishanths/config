@@ -20,8 +20,10 @@ sync: mkdir
 	cp "${HOME}/.config/$(SUBL_PACKAGES_USER)/Preferences.sublime-settings" \
 		"config/$(SUBL_PACKAGES_USER)/Preferences.sublime-settings"
 	# sublime packages
-	cp "${HOME}/.config/$(SUBL_PACKAGES_USER)/GoSublime/src/margo/margo.go" \
-		"config/$(SUBL_PACKAGES_USER)/GoSublime/src/margo/margo.go"
+	cp "${HOME}/.config/$(SUBL_PACKAGES_USER)/Gofmt.sublime-settings" \
+		"config/$(SUBL_PACKAGES_USER)/Gofmt.sublime-settings"
+	cp "${HOME}/.config/$(SUBL_PACKAGES_USER)/LSP.sublime-settings" \
+		"config/$(SUBL_PACKAGES_USER)/LSP.sublime-settings"
 	cp "${HOME}/.config/$(SUBL_PACKAGES_USER)/RustFmt.sublime-settings" \
 		"config/$(SUBL_PACKAGES_USER)/RustFmt.sublime-settings"
 	cp "${HOME}/.config/$(SUBL_PACKAGES_USER)/RustEnhanced.sublime-settings" \
@@ -33,4 +35,3 @@ mkdir:
 	mkdir -p config/git
 	mkdir -p bin
 	mkdir -p config/$(SUBL_PACKAGES_USER)
-	mkdir -p config/$(SUBL_PACKAGES_USER)/GoSublime/src/margo
