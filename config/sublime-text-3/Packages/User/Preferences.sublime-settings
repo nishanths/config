@@ -2,10 +2,10 @@
 	"always_show_minimap_viewport": true,
 	"color_scheme": "Packages/User/Monokai Soda.tmTheme",
 	"ensure_newline_at_eof_on_save": true,
-    "font_face": "Menlo Regular",
-    "tab_size": 4,
-    "translate_tabs_to_spaces": false,
-    "tree_animation_enabled": false,
+	"font_face": "Bitstream Vera Sans Mono",
+	"tab_size": 4,
+	"translate_tabs_to_spaces": false,
+	"tree_animation_enabled": false,
 	"ignored_packages":
 	[
 		"Vintage"
