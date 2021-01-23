@@ -6,7 +6,7 @@
 [init]
 	defaultBranch = main
 [core]
-	editor = subl -n -w
+	editor = vi
 [alias]
 	co = checkout
 	s = status

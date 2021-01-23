@@ -16,7 +16,7 @@ The best known method of installation is mentioned.
   srstevenson/vim-picker
 - gvim: dnf; provides vimx with clipboard and other features
 - jq: dnf, see GitHub
-- sublime text: dnf, see [website][subl] for instructions
+- sublime text: dnf, see [website][subl] for instructions, use dev channel
 - vim: dnf, package named vim-enhanced on Fedora 32
 - xclip: dnf
 - rg: dnf, package named ripgrep
@@ -50,7 +50,7 @@ The best known method of installation is mentioned.
   Cursor color:  Text: ffffff,          Background: 32859E/57AAC2.
   Bold color, Highlight color, ... are unchecked.
   ```
-- Colors > Palette (at bottom) > choose "Solarized".
+- Colors > Palette (at bottom) > choose "Tango".
   Check "Show bold text in bright colors".
 
 ## Shortcuts

@@ -24,3 +24,4 @@ alias docker=podman
 alias pbcopy="xclip -selection c"
 alias pbpaste="xclip -selection clipboard -o"
 alias open="xdg-open"
+alias o="open"

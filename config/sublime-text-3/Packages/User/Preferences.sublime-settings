@@ -12,10 +12,11 @@
 	[
 		78
 	],
+	"show_encoding": true,
 	"tab_size": 4,
 	"theme": "Adaptive.sublime-theme",
 	"translate_tabs_to_spaces": false,
 	"tree_animation_enabled": false,
 	"trim_trailing_white_space_on_save": true,
-	"vintage_ctrl_keys": true,
+	"vintage_ctrl_keys": true
 }
