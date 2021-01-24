@@ -12,6 +12,7 @@ export GOPATH=$HOME/go
 export VISUAL='subl -n -w'
 # https://stackoverflow.com/a/64011263/3309046
 export CLOUDSDK_PYTHON=python2
+export GPG_TTY=$(tty)
 
 if [ -f ~/.secrets ]; then
     . ~/.secrets

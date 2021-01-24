@@ -3,6 +3,7 @@
 [user]
 	name = Nishanth Shanmugham
 	email = nishanth.gerrard@gmail.com
+	signingkey = 2BFED8F6846F99B4
 [init]
 	defaultBranch = main
 [core]
@@ -33,3 +34,5 @@
 	required = true
 [pull]
 	ff = only
+[commit]
+	gpgsign = true
