@@ -8,6 +8,8 @@ sync: mkdir
 	cp ${HOME}/.bashrc                     bashrc
 	# git
 	cp ${HOME}/.config/git/config          config/git/config
+	# rsnapshot
+	cp ${HOME}/.config/rsnapshot/rsnapshot.conf config/rsnapshot/rsnapshot.conf
 	# vim
 	cp ${HOME}/.vimrc                      vimrc
 	cp ${HOME}/.gvimrc                     gvimrc
@@ -31,7 +33,8 @@ sync: mkdir
 
 .PHONY: mkdir
 mkdir:
-	mkdir -p vim/colors
 	mkdir -p config/git
+	mkdir -p config/rsnapshot
+	mkdir -p vim/colors
 	mkdir -p bin
 	mkdir -p config/$(SUBL_PACKAGES_USER)
