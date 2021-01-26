@@ -16,6 +16,7 @@ sync: mkdir
 	cp ${HOME}/.vim/colors/ayu_custom.vim  vim/colors/ayu_custom.vim
 	# bin
 	cp ${HOME}/bin/git-prompt.sh           bin/git-prompt.sh
+	cp ${HOME}/bin/backup                  bin/backup
 	# sublime
 	cp "${HOME}/.config/$(SUBL_PACKAGES_USER)/Default (Linux).sublime-keymap" \
 		"config/$(SUBL_PACKAGES_USER)/Default (Linux).sublime-keymap"

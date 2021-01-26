@@ -1,0 +1,3 @@
+#! /usr/bin/env bash
+
+sudo rsnapshot -c $HOME/.config/rsnapshot/rsnapshot.conf alpha
