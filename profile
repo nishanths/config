@@ -1,11 +1,11 @@
 # User specific environment and startup programs
 
-export PATH=$HOME/.local/bin:$PATH
-export PATH=$HOME/bin:$PATH
 export PATH=/usr/local/go/bin:$PATH
 export PATH=$HOME/go/bin:$PATH
 export PATH=/usr/local/lib/nodejs/node-v14.8.0-linux-x64/bin:$PATH
 export PATH="$HOME/.cargo/bin:$PATH"
+export PATH=$HOME/.local/bin:$PATH
+export PATH=$HOME/bin:$PATH
 
 export GOPATH=$HOME/go
 
