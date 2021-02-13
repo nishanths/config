@@ -1,3 +1,55 @@
 #!/usr/bin/env bash
 
 sudo rsnapshot -c $HOME/.config/rsnapshot/rsnapshot.conf alpha
+
+: '
+= Backup instructions
+
+= Contents
+
+* Unlock and mount partition
+  * GUI
+  * Command line
+* Run a backup
+* Unmount and lock partition
+  * GUI
+
+= Unlock and mount partition
+
+== GUI
+
+  * In Files, right-click and choose Mount on the 255 GB Encrypted partition
+    in the sidebar.
+  * Enter LUKS encryption password when prompted.
+    (the partition should have been mounted at
+    /run/media/nishanthshanmugham/Backup,
+    and the sidebar should list the Backup partition)
+
+== Command line
+
+  # Find disk list entry.
+  % sudo fdisk -l
+    (e.g., /dev/sda1)
+
+  # Unlock the encrypted partition.
+  % udisksctl unlock -b /dev/sda1
+    (enter LUKS encryption password)
+    (prints e.g., Unlocked /dev/sda1 as /dev/dm-4.)
+
+  # Mount it.
+  % udisksctl mount -b /dev/dm-4
+    (prints e.g., Mounted /dev/dm-4 at /run/media/nishanthshanmugham/Backup)
+
+= Run a backup
+
+  % $HOME/bin/backup
+
+= Unmount and lock partition
+
+== GUI
+
+  * In Files, click the unmount icon on the Backup partition in the sidebar.
+    (the sidebar should now show 255 GB Encrypted)
+  * In Files, right-click and choose Safely Remove Drive on the 255 GB
+    Encrypted partition in the sidebar.
+'

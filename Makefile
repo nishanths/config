@@ -2,10 +2,12 @@ SUBL_PACKAGES_USER := sublime-text-3/Packages/User
 
 .PHONY: sync
 sync: mkdir
-	# bash
+	# bash/zsh
 	cp ${HOME}/.bash_profile               bash_profile
 	cp ${HOME}/.profile                    profile
 	cp ${HOME}/.bashrc                     bashrc
+	cp ${HOME}/.zshenv                     zshenv
+	cp ${HOME}/.zshrc                      zshrc
 	# git
 	cp ${HOME}/.config/git/config          config/git/config
 	# rsnapshot

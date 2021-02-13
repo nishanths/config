@@ -13,15 +13,15 @@ export PS1='[\W] % '
 
 if [ -f $HOME/bin/git-prompt.sh ]; then
     source $HOME/bin/git-prompt.sh
-    export PS1='[\W$(__git_ps1 "|%s")$(printf "%.*s%.*s" $? "|" $? $?)] % '
+    export PS1='\W$(__git_ps1 "|%s")$(printf "%.*s%.*s" $? "|" $? $?)$ '
 fi
 
 # bind Ctrl-K to clear (like macOS's Command-K)
 bind -x '"\C-k":"clear"'
 
-alias vim=gvim
 alias docker=podman
 alias pbcopy="xclip -selection c"
 alias pbpaste="xclip -selection clipboard -o"
 alias open="xdg-open"
 alias o="open"
+alias kube="kubectl"
