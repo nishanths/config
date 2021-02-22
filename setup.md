@@ -48,6 +48,7 @@ The best known method of installation is mentioned.
   ```
   Default color: Text: e6e1cf (ayu fg), Background: 1e1e1e.
   Bold color, Highlight color, ... are unchecked.
+  Cursor: #0b7a9d
   ```
 - Colors > Palette (at bottom) > choose "Tango".
 

@@ -164,10 +164,6 @@ let g:indentLine_char = '▏'
 let g:indentLine_setColors = 0 " ayu colorscheme provides highlighting
 let g:indentLine_setConceal = 0
 
-let g:lightline = {
-  \ 'colorscheme': 'ayu_dark',
-\ }
-
 " Color and syntax
 syntax on
 set termguicolors     " enable true colors support
