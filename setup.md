@@ -22,6 +22,7 @@ The best known method of installation is mentioned.
 - rg: dnf, package named ripgrep
 - universal-ctags: improvement over exuberant-ctags; this requires a bit of
   work since it's packaged as a snap
+- pass, dnf
 
   ```
   # install snap, see URL:
@@ -43,13 +44,7 @@ The best known method of installation is mentioned.
 
 ## Colors
 
-- Colors > uncheck "Use colors from system theme"
-- Colors > Built-in schemes > Custom.
-  ```
-  Default color: Text: e6e1cf (ayu fg), Background: 1e1e1e.
-  Bold color, Highlight color, ... are unchecked.
-  Cursor: #0b7a9d
-  ```
+- Colors > "Use colors from system theme" is checked.
 - Colors > Palette (at bottom) > choose "Tango".
 
 ## Shortcuts

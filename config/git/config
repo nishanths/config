@@ -2,7 +2,7 @@
 	ui = true
 [user]
 	name = Nishanth Shanmugham
-	email = nishanth.gerrard@gmail.com
+	email = ns@mail.growl.space
 	signingkey = 2BFED8F6846F99B4
 [init]
 	defaultBranch = main
