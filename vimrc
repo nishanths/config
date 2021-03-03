@@ -3,11 +3,9 @@ call plug#begin('~/.vim/plugged')
 " Utilities
 Plug 'scrooloose/nerdcommenter'
 Plug 'rking/ag.vim'
-" Plug 'ludovicchabant/vim-gutentags'
 Plug 'srstevenson/vim-picker'
 Plug 'Raimondi/delimitMate'
 Plug 'Yggdroot/indentLine'
-" Plug 'preservim/nerdtree'
 Plug 'itchyny/lightline.vim'
 Plug 'godlygeek/tabular'
 Plug 'tpope/vim-vinegar'
@@ -44,7 +42,6 @@ set formatoptions+=j
 set showcmd
 set hidden
 set textwidth=78
-" set colorcolumn=80
 set ruler
 set lazyredraw
 set ttyfast
@@ -88,18 +85,9 @@ autocmd BufWritePre * :call TrimTrailingWhitespace()
 " comments space
 let NERDSpaceDelims=1
 
-" NERDTree
-" let NERDTreeHijackNetrw=1
-
 " File picker
 nnoremap <C-p> :PickerEdit<CR>
 nnoremap <C-y> :PickerTag<CR>
-" let g:picker_custom_find_executable = 'rg'
-" let g:picker_custom_find_flags = '--color never --files'
-
-" Gutentag
-" set statusline+=%{gutentags#statusline()}
-" let g:gutentags_ctags_executable='/var/lib/snapd/snap/bin/universal-ctags'
 
 " LSP
 function! s:on_lsp_buffer_enabled() abort
