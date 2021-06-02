@@ -26,9 +26,11 @@ function hard_clear() {
 zle -N hard_clear
 bindkey "^k" hard_clear
 
+alias vim=vimx
 alias docker=podman
 alias pbcopy="xclip -selection c"
 alias pbpaste="xclip -selection clipboard -o"
 alias open="xdg-open"
 alias o="open"
 alias kube="kubectl"
+alias subl="/opt/sublime_text/sublime_text"

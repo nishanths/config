@@ -1,12 +1,12 @@
 {
 	"always_show_minimap_viewport": true,
-	"color_scheme": "Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
 	"ensure_newline_at_eof_on_save": true,
-	"font_face": "Inconsolata Medium",
+	"font_face": "PragmataPro Liga",
 	"font_size": 11,
 	"ignored_packages":
 	[
-		"Vintage"
+		"Vintage",
 	],
 	"mini_diff": false,
 	"rulers":
@@ -15,9 +15,10 @@
 	],
 	"show_encoding": true,
 	"tab_size": 4,
-	"theme": "Adaptive.sublime-theme",
+	"theme": "Default Dark.sublime-theme",
 	"translate_tabs_to_spaces": false,
 	"tree_animation_enabled": false,
 	"trim_trailing_white_space_on_save": true,
-	"vintage_ctrl_keys": true
+	"vintage_ctrl_keys": true,
+	"update_check": true,
 }

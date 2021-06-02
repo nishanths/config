@@ -1,11 +1,25 @@
 {
-	"clients":
-	{
-		"gopls":
-		{
-			"enabled": true,
-		}
-	},
-	"auto_show_diagnostics_panel_level": 0,
-	"document_highlight_style": "",
+    "clients": {
+        "gopls": {
+            "enabled": true,
+            "command": ["gopls"],
+            "languageId": "go",
+            "scopes": ["source.go"],
+            "syntaxes": [
+                "Packages/Go/Go.sublime-syntax",
+                "Packages/GoSublime/syntax/GoSublime-Go-Recommended.sublime-syntax"
+            ],
+            "initializationOptions": {
+                "experimentalWorkspaceModule": false
+            }
+        },
+        "haskell-language-server": {
+          "command": ["haskell-language-server-wrapper", "--lsp"],
+          "scopes": ["source.haskell"],
+          "syntaxes": ["Packages/Haskell/Haskell.sublime-syntax"],
+          "languageId": "haskell"
+      }
+  },
+  "auto_show_diagnostics_panel_level": 0,
+  "document_highlight_style": "",
 }

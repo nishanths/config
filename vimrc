@@ -3,13 +3,13 @@ call plug#begin('~/.vim/plugged')
 " Utilities
 Plug 'scrooloose/nerdcommenter'
 Plug 'rking/ag.vim'
-Plug 'ludovicchabant/vim-gutentags'
 Plug 'srstevenson/vim-picker'
 Plug 'Raimondi/delimitMate'
 Plug 'Yggdroot/indentLine'
-Plug 'preservim/nerdtree'
-Plug 'itchyny/lightline.vim'
+" Plug 'itchyny/lightline.vim'
 Plug 'godlygeek/tabular'
+Plug 'justinmk/vim-dirvish'
+Plug 'tpope/vim-eunuch'
 
 " LSP and autocompletion
 Plug 'prabirshrestha/async.vim'
@@ -25,6 +25,8 @@ Plug 'JuliaEditorSupport/julia-vim'
 
 " Colors
 Plug 'ayu-theme/ayu-vim'
+Plug 'tomasr/molokai'
+Plug 'robertmeta/nofrils'
 
 call plug#end()
 
@@ -41,20 +43,21 @@ set formatoptions+=j
 set showcmd
 set hidden
 set textwidth=78
-" set colorcolumn=80
 set ruler
 set lazyredraw
 set ttyfast
 set wildmenu
-set cursorline
+set nocursorline
 set tm=500
 set backspace=2
 set tabstop=4
 set shiftwidth=4
 set expandtab
 set number " https://jeffkreeftmeijer.com/vim-number/
-set laststatus=2
-set noshowmode
+" NOTE: set laststatus=2 if lightline plugin is enabled
+set laststatus=1
+" NOTE: use noshowmode if lightline plugin is enabled
+" set noshowmode
 " http://vimcasts.org/episodes/soft-wrapping-text/
 set wrap
 set linebreak
@@ -84,18 +87,8 @@ autocmd BufWritePre * :call TrimTrailingWhitespace()
 " comments space
 let NERDSpaceDelims=1
 
-" NERDTree
-let NERDTreeHijackNetrw=1
-
 " File picker
-nnoremap <C-p> :PickerEdit<CR>
-nnoremap <C-y> :PickerTag<CR>
-let g:picker_custom_find_executable = 'rg'
-let g:picker_custom_find_flags = '--color never --files'
-
-" Gutentag
-set statusline+=%{gutentags#statusline()}
-let g:gutentags_ctags_executable='/var/lib/snapd/snap/bin/universal-ctags'
+nnoremap <C-y> :PickerEdit<CR>
 
 " LSP
 function! s:on_lsp_buffer_enabled() abort
@@ -157,16 +150,20 @@ let g:go_fmt_command = "goimports"
 
 " Netrw
 let g:netrw_banner = 0
-let g:netrw_liststyle = 3
+let g:netrw_liststyle = 0
+
+" Show in netrw
+map <Leader>f :let @/=expand("%:t") <Bar> execute 'Explore' expand("%:h") <Bar> normal n<CR>
 
 " IndentLine
 let g:indentLine_char = '▏'
 let g:indentLine_setColors = 0 " ayu colorscheme provides highlighting
 let g:indentLine_setConceal = 0
 
+let g:lightline = {
+  \ 'colorscheme': 'powerlineish',
+\ }
+
 " Color and syntax
 syntax on
-set termguicolors     " enable true colors support
-set background=dark
-let g:ayucolor="dark" " for dark version of theme
-colorscheme ayu_custom
+colo nofrils-dark
