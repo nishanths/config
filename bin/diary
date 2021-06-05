@@ -3,7 +3,7 @@
 set -euo pipefail
 
 usage() {
-	>&2 echo "usage: diary [r|w|env]"
+	>&2 echo "usage: diary [r|w|env|help]"
 	exit 2
 }
 
@@ -61,16 +61,18 @@ main() {
 	local diary_home="${DIARY_HOME:-$default_diary_home}"
 
 	if [[ $# -eq 0 ]]; then
-		diary_write $diary_home
+		diary_read $diary_home
 	elif [[ $# -eq 1 ]]; then
 		case $1 in
-			r)   diary_read $diary_home ;;
-			w)   diary_write $diary_home ;;
-			env) diary_env $diary_home ;;
-			*)   usage ;;
+			r)    diary_read $diary_home ;;
+			w)    diary_write $diary_home ;;
+			env)  diary_env $diary_home ;;
+			help) usage ;;
+			*)    usage; exit 2 ;;
 		esac
 	else
 		usage
+		exit 2
 	fi
 }
 
