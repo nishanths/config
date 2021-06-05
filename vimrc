@@ -84,6 +84,9 @@ fun! TrimTrailingWhitespace()
 endfun
 autocmd BufWritePre * :call TrimTrailingWhitespace()
 
+" Insert d/m format date on typing 'dm<space>' in insert mode
+:iab <expr> dm strftime("= %-d/%-m")
+
 " comments space
 let NERDSpaceDelims=1
 

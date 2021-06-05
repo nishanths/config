@@ -1,0 +1,77 @@
+#! /usr/bin/env bash
+
+set -euo pipefail
+
+usage() {
+	>&2 echo "usage: diary [r|w|env]"
+	exit 2
+}
+
+# Write a new entry or update the entry for the current date.
+diary_write() {
+	# Determine date values.
+	local current_date=$(date)
+	local year=$(date --date="$current_date" "+%Y")
+	local month=$(date --date="$current_date" "+%m")
+	local day=$(date --date="$current_date" "+%d")
+	local short_month=$(date --date="$current_date" "+%-m")
+	local short_day=$(date --date="$current_date" "+%-d")
+
+	# Create diary file for today's date, if not existing.
+	mkdir -p   "$1/${year}/${month}"
+	local file="$1/${year}/${month}/${day}.txt"
+	local content="= ${short_day}/${short_month}"
+	if [[ ! -f $file ]]; then
+		(umask 066 && touch $file)
+		echo $content >> $file
+	fi
+
+	# Run editor.
+	# TODO: allow customizing editor
+	gedit -s $file
+
+	# Remove file if there's no content besides the date, after the editor closes.
+	# (Most likely meaning no entry wasn't made.)
+	if [[ $(cat $file) == $content ]]; then
+		rm -f $file
+	fi
+}
+
+# Read the entries for the current year.
+diary_read() {
+	local current_date=$(date)
+	local year=$(date --date="$current_date" "+%Y")
+
+	2>&1 echo "reading ${year} ..."
+
+	find $diary_home -type f -name '*.txt' | \
+		sort | \
+		xargs -I{} sh -c "cat {}; echo" | \
+		less
+}
+
+# Print environment variable values (or their defaults) used by the `diary` program.
+diary_env() {
+	echo "DIARY_HOME=$1"
+}
+
+main() {
+	# Determine diary home directory.
+	local default_diary_home=$HOME/Documents/diary
+	local diary_home="${DIARY_HOME:-$default_diary_home}"
+
+	if [[ $# -eq 0 ]]; then
+		diary_write $diary_home
+	elif [[ $# -eq 1 ]]; then
+		case $1 in
+			r)   diary_read $diary_home ;;
+			w)   diary_write $diary_home ;;
+			env) diary_env $diary_home ;;
+			*)   usage ;;
+		esac
+	else
+		usage
+	fi
+}
+
+main $*

@@ -19,6 +19,7 @@ sync: mkdir
 	# bin
 	cp ${HOME}/bin/git-prompt.sh           bin/git-prompt.sh
 	cp ${HOME}/bin/backup                  bin/backup
+	cp ${HOME}/bin/diary                   bin/diary
 	# sublime
 	cp "${HOME}/.config/$(SUBL_PACKAGES_USER)/Default (Linux).sublime-keymap" \
 		"config/$(SUBL_PACKAGES_USER)/Default (Linux).sublime-keymap"
