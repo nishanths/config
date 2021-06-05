@@ -14,7 +14,6 @@ export EDITOR='vi'
 # https://stackoverflow.com/a/64011263/3309046
 export CLOUDSDK_PYTHON=python2
 export GPG_TTY=$(tty)
-export DIARY_HOME=$HOME/Documents/diary
 
 if [ -f ~/.secrets ]; then
     . ~/.secrets
