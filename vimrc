@@ -6,7 +6,6 @@ Plug 'rking/ag.vim'
 Plug 'srstevenson/vim-picker'
 Plug 'Raimondi/delimitMate'
 Plug 'Yggdroot/indentLine'
-" Plug 'itchyny/lightline.vim'
 Plug 'godlygeek/tabular'
 Plug 'justinmk/vim-dirvish'
 Plug 'tpope/vim-eunuch'
@@ -24,8 +23,6 @@ Plug 'fatih/vim-go'
 Plug 'JuliaEditorSupport/julia-vim'
 
 " Colors
-Plug 'ayu-theme/ayu-vim'
-Plug 'tomasr/molokai'
 Plug 'robertmeta/nofrils'
 
 call plug#end()
@@ -52,7 +49,7 @@ set tm=500
 set backspace=2
 set tabstop=4
 set shiftwidth=4
-set expandtab
+set noexpandtab
 set number " https://jeffkreeftmeijer.com/vim-number/
 " NOTE: set laststatus=2 if lightline plugin is enabled
 set laststatus=1
@@ -155,17 +152,10 @@ let g:go_fmt_command = "goimports"
 let g:netrw_banner = 0
 let g:netrw_liststyle = 0
 
-" Show in netrw
-map <Leader>f :let @/=expand("%:t") <Bar> execute 'Explore' expand("%:h") <Bar> normal n<CR>
-
 " IndentLine
 let g:indentLine_char = '▏'
 let g:indentLine_setColors = 0 " ayu colorscheme provides highlighting
 let g:indentLine_setConceal = 0
-
-let g:lightline = {
-  \ 'colorscheme': 'powerlineish',
-\ }
 
 " Color and syntax
 syntax on
